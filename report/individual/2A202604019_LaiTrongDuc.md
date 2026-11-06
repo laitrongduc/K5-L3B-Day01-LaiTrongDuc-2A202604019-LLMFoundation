@@ -17,6 +17,7 @@
 ## 2. Kết quả chính
 
 *Chép bảng so sánh cuối Phần 5 (F1 test, F1 SUB 40, p95 ms/tin, USD/1k tin) của chính bạn.*
+```
                                  precision  recall  F1 (test)  F1 (SUB 40)  \
 1. BoW + LogReg (tự code)            0.987   0.848      0.912        0.857   
 2. BoW + MLP (deep learning)         0.988   0.913      0.949        0.947   
@@ -44,7 +45,7 @@
 • SUB chỉ 40 tin: 1 tin sai đổi F1 vài điểm. Chênh < ~0.05 F1 coi như HOÀ — đừng xếp hạng theo số lẻ.
 • Inference đo TỪ VĂN BẢN THÔ → NHÃN (gồm cả vectorize / encode). p50/p95 = gọi từng tin một, như một request thật.
 • train (s) của 3a/3b/3c = thời gian encoder MiniLM encode tập train (+ train đầu LogReg / MLP); LLM = 0 vì không train. Số đo phụ thuộc CPU/GPU của Colab.
-
+```
 
 ## 3. Dự đoán và thực tế
 
